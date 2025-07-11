@@ -3,720 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya Qismina Dewasa Muslimah - Elegant & Luxury</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>HOOTO KOREAN BAG - Tas Trendy Korea | Diskon 39% Hari Ini!</title>
     <style>
         :root {
-            --primary: #F8C8DC;
-            --secondary: #E2AFDE;
-            --accent: #D4A5A5;
+            --primary: #FFB6C1; /* Light pink */
+            --secondary: #FFD1DC; /* Pastel pink */
+            --accent: #FF69B4; /* Hot pink */
             --text: #5A5A5A;
             --light: #FFF9FB;
-            --dark: #3A3A3A;
-            --gold: #D4AF37;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --dark: #333333;
+            --discount: #FF4757;
         }
         
         body {
-            background-color: var(--light);
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+            margin: 0;
+            padding: 0;
             color: var(--text);
+            background-color: var(--light);
             line-height: 1.6;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
         
-        /* Header */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--light);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button {
-            background-color: var(--accent);
+            font-size: 2.5rem;
+            font-weight: bold;
             color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
         }
         
-        .cta-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-2px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 60px 0;
-            text-align: center;
+        .tagline {
+            font-size: 1.2rem;
             color: white;
-        }
-        
-        .hero h1 {
-            font-size: 42px;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
         
-        .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 30px;
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            gap: 30px;
         }
         
-        .price-container {
-            background-color: white;
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .hero-image img:hover {
+            transform: scale(1.03);
+        }
+        
+        h1 {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-top: 40px;
+        }
+        
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--discount);
+            margin: 20px 0;
         }
         
         .original-price {
             text-decoration: line-through;
             color: var(--text);
-            font-size: 24px;
-        }
-        
-        .discounted-price {
-            color: var(--accent);
-            font-size: 36px;
-            font-weight: 700;
+            font-size: 1.5rem;
+            opacity: 0.7;
         }
         
         .discount-badge {
-            background-color: var(--gold);
+            background-color: var(--discount);
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
-            font-weight: 600;
+            font-weight: bold;
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 15px;
+            font-size: 1.2rem;
         }
         
-        .countdown {
-            font-size: 24px;
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
             margin: 20px 0;
-            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.4);
+            transition: all 0.3s;
         }
         
-        /* Product Gallery */
-        .gallery {
-            padding: 60px 0;
+        .cta-button:hover {
+            background-color: #FF1493;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,105,180,0.6);
         }
         
-        .gallery h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .features {
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
         }
         
         .gallery-item {
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
         }
         
         .gallery-item:hover {
-            transform: scale(1.03);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
         
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block;
+            transition: transform 0.5s;
         }
         
-        /* Features */
-        .features {
-            padding: 60px 0;
-            background-color: white;
+        .gallery-item:hover img {
+            transform: scale(1.1);
         }
         
-        .features h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: var(--light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .feature-item h3 {
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-        
-        /* Testimonials */
         .testimonials {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .testimonial-item {
             background-color: white;
             padding: 30px;
-            border-radius: 10px;
-            color: var(--text);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
-        .testimonial-text {
-            font-style: italic;
+        .testimonial {
             margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .testimonial:last-child {
+            border-bottom: none;
         }
         
         .testimonial-author {
-            font-weight: 600;
-            color: var(--dark);
+            font-weight: bold;
+            color: var(--accent);
+            margin-top: 10px;
         }
         
-        .stars {
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        
-        /* FAQ */
         .faq {
-            padding: 60px 0;
-        }
-        
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
+            margin: 40px 0;
         }
         
         .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
+            margin-bottom: 15px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .faq-question {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        
-        .big-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            display: inline-block;
-        }
-        
-        .big-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
-            font-size: 14px;
-        }
-        
-        /* Popup */
-        .popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 300px;
-            transform: translateY(150%);
-            transition: transform 0.5s ease;
-            z-index: 1000;
-        }
-        
-        .popup.show {
-            transform: translateY(0);
-        }
-        
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .popup-close {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            color: var(--text);
-        }
-        
-        .popup-content {
-            display: flex;
-            align-items: center;
-        }
-        
-        .popup-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-        
-        .popup-text {
-            font-size: 14px;
-        }
-        
-        .popup-text strong {
+            font-weight: bold;
             color: var(--accent);
+            margin-bottom: 10px;
         }
         
-        /* Responsive */
+        .urgency {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: var(--dark);
+            color: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: 50px;
+        }
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
+            .hero {
+                flex-direction: column;
             }
             
-            .hero p {
-                font-size: 18px;
+            .hero-content, .hero-image {
+                text-align: center;
             }
             
-            .price-container {
-                padding: 15px 30px;
-            }
-            
-            .original-price {
-                font-size: 20px;
-            }
-            
-            .discounted-price {
-                font-size: 28px;
+            h1 {
+                font-size: 2rem;
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container header-content">
-            <div class="logo">Abaya Qismina</div>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
+        <div class="container">
+            <div class="logo">HOOTO</div>
+            <div class="tagline">Tas Korea Trendi untuk Gaya Harianmu!</div>
         </div>
     </header>
     
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Abaya Qismina Dewasa Muslimah</h1>
-            <p>Elegant & Luxury - Tampil anggun dengan detail bordir emas premium yang mewah</p>
-            
-            <div class="price-container">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>HOOTO KOREAN BAG<br>Tas Trendy Korea yang Sedang Viral!</h1>
+                <p>Tas dengan desain minimalis ala Korea yang super stylish dan multifungsi. Cocok untuk kerja, kuliah, atau jalan-jalan!</p>
+                
+                <div class="price">
+                    Rp185.250 <span class="original-price">Rp303.689</span>
+                    <span class="discount-badge">DISKON 39%!</span>
+                </div>
+                
+                <p><i class="fas fa-check" style="color: var(--accent);"></i> READY WARNA BROWN & BLACK</p>
+                <p><i class="fas fa-check" style="color: var(--accent);"></i> WARNA KHAKI SOLD OUT</p>
+                
+                <a href="https://nava.orderonline.id/hooto-korean-bag" class="cta-button">
+                    <i class="fas fa-shopping-cart"></i> PESAN SEKARANG
+                </a>
+                
+                <p><i class="fas fa-bolt" style="color: var(--accent);"></i> <strong>Promo terbatas!</strong> Stok hampir habis!</p>
             </div>
             
-            <div class="countdown" id="countdown">
-                Promo berakhir dalam: 23:59:59
+            <div class="hero-image">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/09/19/16635666385ccfc82a6fd0835c8fc637a0bbcf64ff_thumbnail_220x293.webp" alt="HOOTO KOREAN BAG">
+            </div>
+        </section>
+        
+        <section>
+            <h2>✨ Kenapa Memilih HOOTO KOREAN BAG?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Desain Korea</h3>
+                    <p>Tren terbaru dari Korea Selatan yang sedang viral di kalangan fashionista</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>Multifungsi</h3>
+                    <p>Cocok untuk berbagai kesempatan: kerja, kuliah, atau jalan-jalan</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Warna Elegan</h3>
+                    <p>Warna netral yang mudah dipadukan dengan berbagai outfit</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-weight-hanging"></i></div>
+                    <h3>Ringan & Nyaman</h3>
+                    <p>Bahan premium yang ringan tapi kuat dan tahan lama</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>📸 Galeri Produk</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/09/19/1663566634be1e29bb8bc0118c04f8085b6c318584.webp" alt="HOOTO KOREAN BAG">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/09/19/166356663640de8b14e6308924e7b6a0add68cfaaa.webp" alt="HOOTO KOREAN BAG">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.lazcdn.com/g/p/f8244ec84e86415838599b6bbcb26e30.jpg_720x720q80.jpg_.webp" alt="HOOTO KOREAN BAG">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/09/19/16635667036c3b7173cb74b4239c2b185b372f2d03.webp" alt="HOOTO KOREAN BAG">
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <h2>💖 Kata Mereka yang Sudah Membeli</h2>
+            
+            <div class="testimonial">
+                <p>"Tasnya keren banget! Desainnya simpel tapi elegant, pas banget buat daily use. Bahannya juga ringan tapi kuat. Worth it banget harganya!"</p>
+                <div class="testimonial-author">- Rina, 28 tahun</div>
             </div>
             
-            <a href="#order" class="cta-button">Dapatkan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Product Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina Model 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_5151491750595682922.jpeg" alt="Abaya Qismina Model 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8080851750595683993.jpeg" alt="Abaya Qismina Model 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6839561750595683944.jpeg" alt="Abaya Qismina Model 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8897541750595682978.jpeg" alt="Abaya Qismina Model 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_4829401750595682954.jpeg" alt="Abaya Qismina Model 6">
-                </div>
+            <div class="testimonial">
+                <p>"Awalnya ragu karena beli online, tapi pas sampai kaget karena kualitasnya bagus banget. Sekarang jadi tas favorit buat ke kampus!"</p>
+                <div class="testimonial-author">- Siti, 23 tahun</div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Features -->
-    <section class="features">
-        <div class="container">
-            <h2>Keunggulan Abaya Qismina</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3>Bahan Premium</h3>
-                    <p>Dibuat dari bahan Chiffon Rose yang ringan dan mengalir anggun, dilapisi sepenuhnya dengan jersey lembut untuk kenyamanan maksimal.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Desain Elegan</h3>
-                    <p>Potongan A-line yang mengalir indah saat Anda berjalan dengan desain lapisan ruffle yang menciptakan siluet yang anggun.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>Detail Mewah</h3>
-                    <p>Detail bordir emas premium di ujung lengan dan lapisan abaya menambahkan sentuhan mewah namun halus.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h3>Paket Lengkap</h3>
-                    <p>Dilengkapi dengan syal tangan yang serasi, terbuat dari kain yang sama dan dihiasi dengan aksen emas.</p>
-                </div>
+            
+            <div class="testimonial">
+                <p:"Warnanya brown yang cantik dan netral, jadi gampang dipadukan dengan baju apa aja. Kapasitasnya juga cukup besar buat bawa laptop 13 inch."</p>
+                <div class="testimonial-author">- Devi, 35 tahun</div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Abayanya sangat nyaman dipakai dan bahannya adem. Bordir emasnya bikin tampilan jadi lebih mewah. Recomended banget!"</p>
-                    <p class="testimonial-author">- Siti Aisyah, Jakarta</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pas banget buat acara pernikahan teman. Banyak yang nanya beli dimana. Pelayanannya juga cepat dan ramah."</p>
-                    <p class="testimonial-author">- Rina Dewi, Bandung</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"Desainnya feminin banget dan jatuhnya pas di badan. Udah beli 2 warna karena diskonnya menggiurkan."</p>
-                    <p class="testimonial-author">- Maya Fitriani, Surabaya</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
+        </section>
+        
+        <section class="faq">
+            <h2>❓ Pertanyaan yang Sering Ditanyakan</h2>
+            
             <div class="faq-item">
-                <h3 class="faq-question">Apa saja ukuran yang tersedia?</h3>
-                <p>Abaya Qismina tersedia dalam ukuran S, M, L, dan XL dengan cutting yang nyaman dan sesuai untuk tubuh wanita Asia.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Berapa lama waktu pengiriman?</h3>
-                <p>Waktu pengiriman 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa setelah pembayaran dikonfirmasi.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Apakah bisa return atau tukar ukuran?</h3>
-                <p>Kami menerima penukaran ukuran dalam waktu 7 hari setelah barang diterima dengan syarat tag masih terpasang dan belum dicuci.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Metode pembayaran apa saja yang tersedia?</h3>
-                <p>Kami menerima transfer bank (BCA, Mandiri, BRI), e-wallet (OVO, Dana, ShopeePay), dan pembayaran via gerai retail (Alfamart, Indomaret).</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section" id="order">
-        <div class="container">
-            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
-            <p>Dapatkan Abaya Qismina dengan diskon 45% hanya hari ini. Stok terbatas!</p>
-            
-            <div class="price-container" style="margin-bottom: 30px;">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
+                <div class="faq-question">Apa saja warna yang tersedia?</div>
+                <p>Saat ini tersedia warna BROWN dan BLACK. Warna KHAKI sudah SOLD OUT.</p>
             </div>
             
-            <a href="https://nava.orderonline.id/abaya-qismina-dewasa-muslimah" class="big-button">Pesan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Tentang Kami</h3>
-                    <p>Menghadirkan busana muslimah berkualitas tinggi dengan desain elegan dan harga terjangkau.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 0852-3669-9497</li>
-                        <li><i class="fas fa-envelope"></i> cs@abayaqismina.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="#order">Pesan Sekarang</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Follow Kami</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+            <div class="faq-item">
+                <div class="faq-question">Berapa ukuran tas ini?</div>
+                <p>Dimensi tas: 30cm (tinggi) x 25cm (lebar) x 10cm (dalam). Cukup untuk membawa laptop 13", buku, dompet, dan kebutuhan harian lainnya.</p>
             </div>
-            <div class="copyright">
-                &copy; 2023 Abaya Qismina. All Rights Reserved.
+            
+            <div class="faq-item">
+                <div class="faq-question">Berapa lama pengiriman?</div>
+                <p>Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung lokasi pengiriman. Kami menggunakan jasa pengiriman terpercaya.</p>
             </div>
-        </div>
-    </footer>
-    
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <h4>Promo Spesial!</h4>
-            <button class="popup-close" id="popup-close">&times;</button>
-        </div>
-        <div class="popup-content">
-            <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina" class="popup-img">
-            <div class="popup-text">
-                <strong>Diskon 45% Hari Ini!</strong> Dapatkan Abaya Qismina dengan harga Rp245.000 saja. Stok terbatas!
+            
+            <div class="faq-item">
+                <div class="faq-question">Apakah ada garansi?</div>
+                <p>Kami memberikan garansi 7 hari untuk kerusakan akibat cacat produksi. Silakan hubungi kami jika ada masalah dengan produk.</p>
             </div>
-        </div>
+        </section>
+        
+        <section class="urgency">
+            <h2>⏰ Jangan Sampai Kehabisan!</h2>
+            <p>Diskon 39% hanya berlaku untuk 50 pembeli pertama hari ini! Stok sangat terbatas!</p>
+            
+            <div class="price" style="color: white;">
+                Rp185.250 <span class="original-price" style="color: white; opacity: 0.8;">Rp303.689</span>
+            </div>
+            
+            <a href="https://nava.orderonline.id/hooto-korean-bag" class="cta-button" style="background-color: white; color: var(--accent);">
+                <i class="fas fa-shopping-cart"></i> PESAN SEKARANG SEBELUM KEHABISAN
+            </a>
+            
+            <p><i class="fas fa-exclamation-triangle"></i> <strong>Hanya tersisa 12 buah!</strong></p>
+        </section>
     </div>
     
-    <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
+    <footer>
+        <div class="container">
+            <div class="logo">HOOTO</div>
+            <p>Tas Korea Trendi untuk Gaya Harianmu</p>
             
-            const diff = endOfDay - now;
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
             
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdown').textContent = 
-                `Promo berakhir dalam: ${Math.floor(hours)}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-        
-        // Popup
-        setTimeout(() => {
-            document.getElementById('popup').classList.add('show');
-        }, 5000);
-        
-        document.getElementById('popup-close').addEventListener('click', () => {
-            document.getElementById('popup').classList.remove('show');
-        });
-        
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+            <p>© 2023 HOOTO KOREAN BAG. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
